@@ -33,6 +33,14 @@
 
 ---
 
+## useful links
+💫 Try Sentry for FREE: https://dub.sh/sentry3 (Get $80 for FREE)
+🚀 Try Stream for FREE: https://dub.sh/getstreamio
+✨ Try Neon for FREE: https://dub.sh/neon3
+🔐 Try Clerk for FREE: https://dub.sh/clerk3
+💥 Try Imagekit for FREE: https://tinyurl.com/4c8pmh88
+
+
 ## 🧪 Environment Variables
 
 ### Backend (`/backend`)
