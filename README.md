@@ -1,6 +1,5 @@
 # 🛒 PERN Stack E-Commerce Platform 🚀
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
 
 ---
 
@@ -26,19 +25,9 @@
 - 🚨 Monitoring, Error Tracking & Performance Tracking with Sentry
 - 📋 Structured Logs for debugging and analysis
 - ⚡ Modern SaaS / E-Commerce Architecture
-- 🌐 Deploy your app with a live URL
-- 🆓 100% Free Setup to get started
-- 📂 Full Source Code Provided
-- 🎯 Resume-ready production-style project
+
 
 ---
-
-## useful links
-💫 Try Sentry for FREE: https://dub.sh/sentry3 (Get $80 for FREE)
-🚀 Try Stream for FREE: https://dub.sh/getstreamio
-✨ Try Neon for FREE: https://dub.sh/neon3
-🔐 Try Clerk for FREE: https://dub.sh/clerk3
-💥 Try Imagekit for FREE: https://tinyurl.com/4c8pmh88
 
 
 ## 🧪 Environment Variables
