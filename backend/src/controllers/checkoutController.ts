@@ -127,6 +127,7 @@ export async function createCheckout(
 
     res.json({ checkoutUrl: checkout.url });
   } catch (e) {
+    console.error("Checkout creation failed", e);
     next(e);
   }
 }
