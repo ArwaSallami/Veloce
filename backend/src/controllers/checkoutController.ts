@@ -84,7 +84,7 @@ export async function createCheckout(
     if (totalCents < 10) {
       res.status(400).json({
         error:
-          "Total below Polar minimum (e.g. USD requires at least 10 cents)",
+          "Total below Polar minimum (e.g. eur requires at least 10 cents)",
       });
       return;
     }
@@ -108,7 +108,7 @@ export async function createCheckout(
         [env.POLAR_CHECKOUT_PRODUCT_ID]: [
           {
             amount_type: "fixed",
-            price_currency: "usd",
+            price_currency: "eur",
             price_amount: totalCents,
           },
         ],
