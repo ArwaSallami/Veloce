@@ -13,6 +13,10 @@ import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
 import CheckoutReturnPage from "./pages/CheckoutReturnPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import SentryDemoPage from "./pages/SentryDemoPage";
+import OrderDetailPage from "./pages/OrderDetailPage";
+import OrderChatPage from "./pages/OrderChatPage";
+import OrderSummaryPage from "./pages/OrderSummaryPage";
 
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
@@ -24,11 +28,19 @@ function App() {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/cart" element={<CartPage />}></Route>
         <Route path="/product/:slug" element={<ProductDetailsPage />}></Route>
+
         <Route
           path="/orders"
           element={isSignedIn ? <OrdersPage /> : <Navigate to={"/"} replace />}
         ></Route>
         <Route path="/checkout/return" element={<CheckoutReturnPage />}></Route>
+        <Route path="/demo-sentry" element={<SentryDemoPage />}></Route>
+
+        {/* Nested routes */}
+        <Route path="/orders/:id" element={<OrderDetailPage />}>
+          <Route index element={<OrderSummaryPage />} />
+          <Route path="chat" element={<OrderChatPage />} />
+        </Route>
       </Routes>
     </Layout>
   );
