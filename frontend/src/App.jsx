@@ -17,6 +17,7 @@ import SentryDemoPage from "./pages/SentryDemoPage";
 import OrderDetailPage from "./pages/OrderDetailPage";
 import OrderChatPage from "./pages/OrderChatPage";
 import OrderSummaryPage from "./pages/OrderSummaryPage";
+import OrderVideoPage from "./pages/OrderVideoPage";
 
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
@@ -35,7 +36,12 @@ function App() {
         ></Route>
         <Route path="/checkout/return" element={<CheckoutReturnPage />}></Route>
         <Route path="/demo-sentry" element={<SentryDemoPage />}></Route>
-
+        <Route
+          path="/orders/:id/call"
+          element={
+            isSignedIn ? <OrderVideoPage /> : <Navigate to={"/"} replace />
+          }
+        ></Route>
         {/* Nested routes */}
         <Route path="/orders/:id" element={<OrderDetailPage />}>
           <Route index element={<OrderSummaryPage />} />
