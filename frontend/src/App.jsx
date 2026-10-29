@@ -19,6 +19,8 @@ import OrderChatPage from "./pages/OrderChatPage";
 import OrderSummaryPage from "./pages/OrderSummaryPage";
 import OrderVideoPage from "./pages/OrderVideoPage";
 
+import AdminProductsPage from "./components/AdminProductsPage";
+
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
   if (!isLoaded) return <PageLoader />;
@@ -42,6 +44,12 @@ function App() {
             isSignedIn ? <OrderVideoPage /> : <Navigate to={"/"} replace />
           }
         ></Route>
+        <Route
+          path="/admin"
+          element={
+            isSignedIn ? <AdminProductsPage /> : <Navigate to="/" replace />
+          }
+        />
         {/* Nested routes */}
         <Route path="/orders/:id" element={<OrderDetailPage />}>
           <Route index element={<OrderSummaryPage />} />
