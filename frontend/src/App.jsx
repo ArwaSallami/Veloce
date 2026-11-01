@@ -18,8 +18,7 @@ import OrderDetailPage from "./pages/OrderDetailPage";
 import OrderChatPage from "./pages/OrderChatPage";
 import OrderSummaryPage from "./pages/OrderSummaryPage";
 import OrderVideoPage from "./pages/OrderVideoPage";
-
-import AdminProductsPage from "./components/AdminProductsPage";
+import AdminProductsPage from "./pages/AdminProductsPage";
 
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
