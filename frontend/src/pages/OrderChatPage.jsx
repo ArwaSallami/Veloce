@@ -1,6 +1,6 @@
 import { HeadphonesIcon, VideoIcon } from "lucide-react";
-import { OrderChatPanelSkeleton } from "../components/LoadingSkeletons.jsx";
 import { PageError } from "../components/PageError.jsx";
+import { OrderChatPanelSkeleton } from "../components/LoadingSkeletons.jsx";
 
 import {
   Chat,
