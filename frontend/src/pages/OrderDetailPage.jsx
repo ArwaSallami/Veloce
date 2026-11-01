@@ -1,7 +1,7 @@
 import { Link, NavLink, Outlet } from "react-router";
-import { OrderDetailSkeleton } from "../components/LoadingSkeletons";
 import { PageError } from "../components/PageError";
 import { useOrderDetailPage } from "../hooks/useOrderDetailPage";
+import { OrderDetailSkeleton } from "../components/LoadingSkeletons";
 import {
   ArrowLeftIcon,
   HeadphonesIcon,
