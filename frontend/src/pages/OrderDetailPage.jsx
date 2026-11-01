@@ -1,7 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router";
 import { PageError } from "../components/PageError";
 import { useOrderDetailPage } from "../hooks/useOrderDetailPage";
-import { OrderDetailSkeleton } from "../components/LoadingSkeletons";
 import {
   ArrowLeftIcon,
   HeadphonesIcon,
@@ -10,6 +9,7 @@ import {
   MessageCircleIcon,
 } from "lucide-react";
 import { formatOrderWhen, formatPrice } from "../utils/format";
+import { OrderDetailSkeleton } from "../components/LoadingSkeletons";
 
 const tabClass = ({ isActive }) =>
   `tab gap-2 whitespace-nowrap ${isActive ? "tab-active" : ""}`;
