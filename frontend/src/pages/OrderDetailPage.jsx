@@ -9,7 +9,7 @@ import {
   MessageCircleIcon,
 } from "lucide-react";
 import { formatOrderWhen, formatPrice } from "../utils/format";
-import { OrderDetailSkeleton } from "../components/LoadingSkeletons";
+import { OrderDetailSkeleton } from "../components/LoadingSkeletons.jsx";
 
 const tabClass = ({ isActive }) =>
   `tab gap-2 whitespace-nowrap ${isActive ? "tab-active" : ""}`;

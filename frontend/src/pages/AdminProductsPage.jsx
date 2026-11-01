@@ -1,9 +1,10 @@
 import { useAdminProductsPage } from "../hooks/useAdminProductsPage.js";
-import { AdminProductsTableSkeleton } from "../components/LoadingSkeletons.jsx";
+
 import { IK_PRESETS, imageKitOptimizedUrl } from "../lib/imagekitUrl.js";
 import { PackageIcon, PencilIcon, PlusIcon, Trash2Icon } from "lucide-react";
 import { formatPrice } from "../utils/format.js";
 import { AdminProductForm } from "../components/AdminProductForm.jsx";
+import { AdminProductsTableSkeleton } from "../components/LoadingSkeletons.jsx";
 
 function AdminProductsPage() {
   const {
